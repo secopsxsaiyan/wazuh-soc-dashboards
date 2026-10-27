@@ -1,0 +1,8 @@
+{"attributes": {"timeFieldName": "timestamp", "title": "wazuh-alerts-*"}, "id": "wazuh-alerts-*", "references": [], "type": "index-pattern"}
+{"attributes": {"timeFieldName": "timestamp", "title": "wazuh-monitoring-*"}, "id": "wazuh-monitoring-*", "references": [], "type": "index-pattern"}
+{"attributes": {"timeFieldName": "timestamp", "title": "wazuh-statistics-*"}, "id": "wazuh-statistics-*", "references": [], "type": "index-pattern"}
+{"attributes": {"title": "wazuh-states-vulnerabilities-*"}, "id": "wazuh-states-vulnerabilities-*", "references": [], "type": "index-pattern"}
+{"attributes": {"title": "wazuh-states-inventory-ports-*"}, "id": "wazuh-states-inventory-ports-*", "references": [], "type": "index-pattern"}
+{"attributes": {"title": "wazuh-states-inventory-users-*"}, "id": "wazuh-states-inventory-users-*", "references": [], "type": "index-pattern"}
+{"attributes": {"title": "wazuh-states-inventory-services-*"}, "id": "wazuh-states-inventory-services-*", "references": [], "type": "index-pattern"}
+{"attributes": {"title": "wazuh-states-inventory-packages-*"}, "id": "wazuh-states-inventory-packages-*", "references": [], "type": "index-pattern"}

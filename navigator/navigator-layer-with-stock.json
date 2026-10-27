@@ -1,0 +1,3572 @@
+{
+  "name": "Wazuh detection packs + stock ruleset - ATT&CK coverage",
+  "versions": {
+    "attack": "20",
+    "navigator": "5.3.2",
+    "layer": "4.5"
+  },
+  "domain": "enterprise-attack",
+  "description": "Techniques tagged in the <mitre> blocks of alerting rules (level >= 1) in: wazuh-fim-escalation, wazuh-misp-ioc, wazuh-nginx-proxy-manager, wazuh-proxmox, wazuh-threat-detection, wazuh-truenas, wazuh-unifi, wazuh-windows. Score = highest rule level for the technique. Includes the stock Wazuh ruleset as source 'wazuh-stock'.",
+  "sorting": 3,
+  "layout": {
+    "layout": "side",
+    "aggregateFunction": "max",
+    "showID": true,
+    "showName": true,
+    "showAggregateScores": true,
+    "countUnscored": false,
+    "expandedSubtechniques": "annotated"
+  },
+  "hideDisabled": false,
+  "techniques": [
+    {
+      "techniqueID": "T1001",
+      "score": 7,
+      "color": "#a6d96a",
+      "comment": "wazuh-stock: 64238 (L7)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1003",
+      "enabled": true,
+      "comment": "",
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1003.001",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 92900 (L12)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1003.002",
+      "score": 14,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 92023 (L8), 92024 (L14), 92026 (L14)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "3"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1005",
+      "score": 6,
+      "color": "#d9ef8b",
+      "comment": "wazuh-proxmox: 100392 (L6); wazuh-stock: 60102 (L5)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "2"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-proxmox, wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1012",
+      "score": 3,
+      "color": "#d9ef8b",
+      "comment": "wazuh-stock: 91808 (L3), 91836 (L3)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "2"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1014",
+      "score": 11,
+      "color": "#66bd63",
+      "comment": "wazuh-stock: 521 (L11)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1016",
+      "score": 4,
+      "color": "#d9ef8b",
+      "comment": "wazuh-stock: 91830 (L4), 91839 (L4)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "2"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1018",
+      "score": 6,
+      "color": "#d9ef8b",
+      "comment": "wazuh-stock: 91805 (L3), 92103 (L6)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "2"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1020",
+      "score": 8,
+      "color": "#a6d96a",
+      "comment": "wazuh-truenas: 100377 (L8)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-truenas"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1021",
+      "score": 14,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 5715 (L3), 11512 (L10), 89606 (L5), 89607 (L3), 99909 (L9), 99910 (L14)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "6"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1021.001",
+      "score": 15,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 67029 (L3), 92109 (L15), 92653 (L3), 92656 (L15), 92657 (L6), 99053 (L3), 99054 (L3)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "7"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1021.002",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 67017 (L3), 92105 (L3), 92106 (L3), 92650 (L12), 99055 (L3), 99056 (L3)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "6"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1021.003",
+      "score": 3,
+      "color": "#d9ef8b",
+      "comment": "wazuh-stock: 99057 (L3), 99058 (L3)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "2"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1021.004",
+      "score": 6,
+      "color": "#d9ef8b",
+      "comment": "wazuh-stock: 5706 (L6), 5710 (L5), 5760 (L5), 92020 (L6), 92603 (L6), 92606 (L6), 99051 (L3), 99052 (L3); wazuh-truenas: 100363 (L5)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "9"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock, wazuh-truenas"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1021.006",
+      "score": 14,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 91823 (L14), 92110 (L4)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "2"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1027",
+      "score": 15,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 91828 (L6), 92041 (L10), 92214 (L15)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "3"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1027.004",
+      "score": 6,
+      "color": "#d9ef8b",
+      "comment": "wazuh-stock: 92006 (L6)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1033",
+      "score": 4,
+      "color": "#d9ef8b",
+      "comment": "wazuh-stock: 91817 (L4), 91831 (L4), 91839 (L4), 92022 (L3), 92030 (L3)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "5"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1036",
+      "score": 4,
+      "color": "#d9ef8b",
+      "comment": "wazuh-stock: 24709 (L4), 24710 (L4), 24711 (L4), 24712 (L4), 24713 (L4), 24714 (L4), 92222 (L3)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "7"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1036.002",
+      "score": 15,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 92060 (L15), 92064 (L15)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "2"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1036.003",
+      "score": 13,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 92016 (L13), 92017 (L13), 92051 (L12)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "3"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1039",
+      "score": 8,
+      "color": "#a6d96a",
+      "comment": "wazuh-truenas: 100375 (L8)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-truenas"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1040",
+      "score": 8,
+      "color": "#a6d96a",
+      "comment": "wazuh-stock: 5104 (L8)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1041",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 99028 (L12)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1046",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 2551 (L10), 5731 (L6), 40601 (L10); wazuh-threat-detection: 101453 (L10); wazuh-unifi: 100311 (L12), 100314 (L10), 100323 (L10), 100329 (L12)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "8"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock, wazuh-threat-detection, wazuh-unifi"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1047",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 18172 (L7), 60727 (L5), 60729 (L5), 60730 (L5), 60731 (L5), 60732 (L5), 60733 (L5), 60734 (L5), 60735 (L5), 60736 (L5), 60737 (L5), 60738 (L5), 60739 (L5), 60740 (L3), 60741 (L5), 60742 (L5), 60743 (L5), 60744 (L5), 60745 (L5), 60746 (L5), 60747 (L3), 60748 (L3), 92070 (L6), 92071 (L12), 92080 (L7), 92654 (L6)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "26"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1048",
+      "enabled": true,
+      "comment": "",
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1048.001",
+      "score": 3,
+      "color": "#d9ef8b",
+      "comment": "wazuh-stock: 99001 (L3), 99002 (L3), 99003 (L3)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "3"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1053",
+      "score": 4,
+      "color": "#d9ef8b",
+      "comment": "wazuh-stock: 60228 (L4)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1053.003",
+      "score": 8,
+      "color": "#a6d96a",
+      "comment": "wazuh-fim-escalation: 100036 (L8); wazuh-stock: 2833 (L8)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "2"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-fim-escalation, wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1053.005",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 67014 (L3), 67015 (L3), 67016 (L3), 92154 (L4), 92155 (L12)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "5"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1055",
+      "score": 14,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 31104 (L6), 31152 (L10), 31153 (L10), 31164 (L6), 31165 (L6), 31507 (L6), 31516 (L6), 61618 (L12), 61620 (L12), 61622 (L12), 61623 (L12), 61625 (L12), 61627 (L12), 61628 (L12), 61630 (L12), 61632 (L12), 61634 (L12), 61636 (L12), 61638 (L12), 61640 (L12), 92400 (L12), 92401 (L12), 92403 (L12), 92910 (L12), 92920 (L14), 184666 (L12), 184676 (L12), 184678 (L12), 184686 (L12), 184696 (L12), 184698 (L12), 184706 (L12), 184716 (L12), 184726 (L12), 184736 (L12), 184746 (L12), 184766 (L12), 184776 (L12)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "38"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1055.003",
+      "score": 3,
+      "color": "#d9ef8b",
+      "comment": "wazuh-stock: 92402 (L3)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1055.012",
+      "score": 3,
+      "color": "#d9ef8b",
+      "comment": "wazuh-stock: 92402 (L3)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1057",
+      "score": 6,
+      "color": "#d9ef8b",
+      "comment": "wazuh-stock: 91815 (L4), 91832 (L4), 91841 (L4), 92604 (L6)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "4"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1059",
+      "score": 15,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 31154 (L10), 91006 (L12), 91007 (L12), 92001 (L6), 92003 (L6), 92005 (L4), 92048 (L15), 92200 (L6), 92201 (L9)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "9"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1059.001",
+      "score": 14,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 91822 (L12), 91823 (L14), 91837 (L4), 91843 (L3), 91844 (L12), 92023 (L8), 92024 (L14), 92027 (L4), 92029 (L6), 92033 (L3), 92057 (L12), 92059 (L14), 92065 (L6), 92066 (L4), 92070 (L6), 92071 (L12), 92151 (L12)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "17"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1059.003",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 92002 (L6), 92004 (L4), 92032 (L3), 92035 (L3), 92036 (L3), 92052 (L4), 92053 (L12), 92061 (L3)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "8"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1059.004",
+      "score": 13,
+      "color": "#1a9850",
+      "comment": "wazuh-threat-detection: 101400 (L13); wazuh-truenas: 100368 (L10), 100380 (L10); wazuh-windows: 100452 (L10)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "4"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-threat-detection, wazuh-truenas, wazuh-windows"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1059.005",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 92000 (L4), 92051 (L12), 92156 (L12)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "3"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1059.006",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 92601 (L6), 92602 (L12)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "2"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1059.007",
+      "score": 14,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 31105 (L6), 92054 (L14)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "2"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1068",
+      "score": 15,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 5707 (L14), 31166 (L6), 31167 (L6), 31168 (L15), 31169 (L15), 40501 (L15), 91005 (L12)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "7"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1070",
+      "score": 9,
+      "color": "#a6d96a",
+      "comment": "wazuh-stock: 593 (L9), 6316 (L3), 63103 (L5), 63104 (L5), 83200 (L5), 83201 (L5)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "6"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1070.004",
+      "score": 10,
+      "color": "#66bd63",
+      "comment": "wazuh-stock: 553 (L7), 597 (L5), 751 (L5), 18655 (L4), 18656 (L8), 18657 (L8), 60117 (L9), 80106 (L10), 80513 (L3), 80516 (L3), 80791 (L3), 87914 (L7), 87921 (L7), 87931 (L5), 87941 (L3), 87946 (L3), 87957 (L5), 90537 (L6), 92021 (L3), 92063 (L6)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "20"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1070.006",
+      "score": 10,
+      "color": "#66bd63",
+      "comment": "wazuh-stock: 91834 (L6); wazuh-threat-detection: 101435 (L10)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "2"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock, wazuh-threat-detection"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1071",
+      "score": 14,
+      "color": "#1a9850",
+      "comment": "wazuh-misp-ioc: 100218 (L11); wazuh-stock: 11209 (L14), 12101 (L12), 24215 (L4)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "4"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-misp-ioc, wazuh-stock"
+        }
+      ],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1071.001",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-misp-ioc: 100227 (L12), 100228 (L12); wazuh-stock: 31411 (L6)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "3"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-misp-ioc, wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1071.002",
+      "score": 10,
+      "color": "#66bd63",
+      "comment": "wazuh-stock: 11512 (L10)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1071.004",
+      "score": 9,
+      "color": "#a6d96a",
+      "comment": "wazuh-stock: 82405 (L9), 99080 (L3), 99081 (L3), 99082 (L3)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "4"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1072",
+      "score": 9,
+      "color": "#a6d96a",
+      "comment": "wazuh-stock: 518 (L9), 64508 (L6)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "2"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1074",
+      "enabled": true,
+      "comment": "",
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1074.001",
+      "score": 4,
+      "color": "#d9ef8b",
+      "comment": "wazuh-stock: 91821 (L4)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1078",
+      "score": 15,
+      "color": "#1a9850",
+      "comment": "wazuh-fim-escalation: 100038 (L8); wazuh-proxmox: 100416 (L4); wazuh-stock: 3602 (L3), 3904 (L3), 4323 (L3), 4335 (L3), 4506 (L8), 4507 (L8), 4810 (L3), 5303 (L3), 5304 (L3), 5501 (L3), 5715 (L3), 6103 (L3), 6105 (L3), 7415 (L3), 7420 (L3), 9305 (L3), 9402 (L3), 9502 (L3), 9701 (L3), 9904 (L3), 10100 (L4), 11205 (L3), 11309 (L3), 11402 (L3), 11503 (L3), 14120 (L3), 14201 (L3), 14203 (L4), 17101 (L9), 17102 (L9), 18107 (L3), 18108 (L4), 18109 (L3), 18119 (L3), 18126 (L3), 18181 (L3), 18257 (L3), 19110 (L3), 19112 (L3), 31504 (L6), 40101 (L12), 40112 (L12), 50105 (L3), 50511 (L3), 60105 (L5), 60106 (L3), 60107 (L4), 60108 (L3), 60118 (L3), 60119 (L3), 61072 (L3), 64009 (L3), 64019 (L3), 64102 (L3), 64105 (L3), 80107 (L3), 80134 (L3), 80138 (L3), 80253 (L3), 80503 (L3), 81622 (L3), 81623 (L4), 81801 (L3), 81902 (L4), 85758 (L3), 87203 (L3), 87603 (L3), 88001 (L3), 89602 (L3), 89603 (L3), 89604 (L3), 89605 (L3), 89606 (L5), 89607 (L3), 91517 (L3), 91709 (L6), 91710 (L6), 91711 (L6), 99612 (L15), 99909 (L9), 99910 (L14), 99912 (L14), 99919 (L9), 99920 (L14); wazuh-truenas: 100350 (L4), 100359 (L7), 100363 (L5), 100382 (L6); wazuh-unifi: 100332 (L5), 100333 (L10)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "92"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-fim-escalation, wazuh-proxmox, wazuh-stock, wazuh-truenas, wazuh-unifi"
+        }
+      ],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1078.002",
+      "score": 15,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 92652 (L6), 92653 (L3), 92656 (L15), 92657 (L6)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "4"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1078.004",
+      "score": 3,
+      "color": "#d9ef8b",
+      "comment": "wazuh-stock: 99020 (L3), 99021 (L3), 99022 (L3), 99023 (L3), 99024 (L3), 99025 (L3)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "6"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1082",
+      "score": 7,
+      "color": "#a6d96a",
+      "comment": "wazuh-stock: 91816 (L4), 91817 (L4), 91829 (L4), 91838 (L4), 92080 (L7), 92654 (L6)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "6"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1083",
+      "score": 10,
+      "color": "#66bd63",
+      "comment": "wazuh-stock: 30411 (L7), 31104 (L6), 31153 (L10), 31333 (L7), 31335 (L7), 31515 (L6), 35051 (L10), 35055 (L10), 80112 (L10), 80113 (L5), 80114 (L10), 91819 (L4), 91820 (L4), 91821 (L4), 91833 (L3), 91842 (L4), 92605 (L6)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "17"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1087",
+      "score": 3,
+      "color": "#d9ef8b",
+      "comment": "wazuh-stock: 92031 (L3), 92032 (L3), 92033 (L3), 92039 (L3)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "4"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1087.002",
+      "score": 3,
+      "color": "#d9ef8b",
+      "comment": "wazuh-stock: 91806 (L3)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1090",
+      "score": 10,
+      "color": "#66bd63",
+      "comment": "wazuh-stock: 35007 (L5), 35052 (L10)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "2"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1092",
+      "score": 8,
+      "color": "#a6d96a",
+      "comment": "wazuh-stock: 60227 (L8)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1095",
+      "score": 15,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 2503 (L5), 4325 (L8), 5601 (L5), 7209 (L7), 11107 (L5), 11207 (L5), 18658 (L4), 18659 (L7), 18660 (L7), 18661 (L7), 18662 (L8), 24061 (L4), 64011 (L8), 64223 (L9), 91510 (L8), 92104 (L15), 92107 (L4)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "17"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1098",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-proxmox: 100394 (L8), 100419 (L10), 100423 (L7); wazuh-stock: 5904 (L8), 18110 (L8), 18111 (L8), 18112 (L8), 18115 (L8), 18127 (L5), 18128 (L8), 18142 (L5), 40105 (L12), 60109 (L8), 60110 (L8), 60111 (L8), 60114 (L8), 60121 (L5), 60133 (L5); wazuh-truenas: 100370 (L8), 100371 (L10); wazuh-unifi: 100307 (L8), 100334 (L5), 100337 (L10)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "23"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-proxmox, wazuh-stock, wazuh-truenas, wazuh-unifi"
+        }
+      ],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1098.001",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 65071 (L3), 65073 (L3), 91709 (L6), 99029 (L12); wazuh-truenas: 100371 (L10), 100382 (L6)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "6"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock, wazuh-truenas"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1098.002",
+      "score": 10,
+      "color": "#66bd63",
+      "comment": "wazuh-stock: 91725 (L10)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1098.003",
+      "score": 3,
+      "color": "#d9ef8b",
+      "comment": "wazuh-stock: 99020 (L3), 99021 (L3), 99022 (L3), 99023 (L3), 99024 (L3), 99025 (L3)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "6"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1098.004",
+      "score": 10,
+      "color": "#66bd63",
+      "comment": "wazuh-fim-escalation: 100039 (L10)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-fim-escalation"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1102",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 30107 (L6), 30307 (L6), 44733 (L7), 87303 (L6), 92038 (L12)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "5"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1105",
+      "score": 15,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 91811 (L4), 92074 (L12), 92075 (L12), 92200 (L6), 92201 (L9), 92203 (L6), 92204 (L9), 92205 (L9), 92207 (L12), 92208 (L15), 92209 (L6), 92210 (L6), 92211 (L14), 92212 (L14), 92213 (L15), 92215 (L12), 92221 (L3), 92227 (L6), 99028 (L12)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "19"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1106",
+      "score": 10,
+      "color": "#66bd63",
+      "comment": "wazuh-stock: 91810 (L10)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1110",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-nginx-proxy-manager: 101710 (L8); wazuh-proxmox: 100417 (L8); wazuh-stock: 428 (L10), 2502 (L10), 3357 (L10), 3651 (L10), 3751 (L6), 3910 (L10), 3911 (L10), 4386 (L10), 5551 (L10), 5631 (L10), 5703 (L10), 5705 (L10), 5712 (L10), 5716 (L5), 5718 (L5), 5719 (L10), 5720 (L10), 5758 (L8), 5763 (L10), 6251 (L10), 6257 (L10), 9351 (L10), 9403 (L10), 9551 (L10), 9750 (L10), 9751 (L10), 9820 (L10), 9951 (L10), 9952 (L10), 9953 (L10), 11109 (L10), 11111 (L9), 11210 (L10), 11251 (L10), 11252 (L10), 11253 (L10), 11306 (L10), 11307 (L10), 11451 (L10), 11452 (L10), 11510 (L10), 11511 (L10), 14151 (L9), 14251 (L10), 18116 (L9), 18151 (L10), 18156 (L10), 18157 (L10), 19152 (L10), 19153 (L10), 30119 (L12), 30202 (L10), 30310 (L10), 31316 (L10), 31510 (L8), 35052 (L10), 40111 (L10), 40112 (L12), 51007 (L10), 60115 (L9), 60203 (L10), 60204 (L10), 64033 (L10), 64109 (L10), 64110 (L10), 80102 (L10), 80140 (L10), 80255 (L10), 80371 (L10), 80506 (L10), 80522 (L4), 80523 (L4), 80524 (L4), 80723 (L5), 81607 (L7), 81615 (L7), 81710 (L10), 81904 (L10), 85006 (L10), 85502 (L10), 85760 (L10), 86803 (L7), 86806 (L12), 86807 (L12), 87202 (L10), 87302 (L10), 87503 (L10), 87602 (L10), 87610 (L10), 87702 (L10), 88203 (L10), 92102 (L6); wazuh-unifi: 100338 (L6), 100339 (L10)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "96"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-nginx-proxy-manager, wazuh-proxmox, wazuh-stock, wazuh-unifi"
+        }
+      ],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1110.001",
+      "score": 10,
+      "color": "#66bd63",
+      "comment": "wazuh-proxmox: 100418 (L10); wazuh-stock: 5503 (L5), 5557 (L5), 5710 (L5), 5760 (L5), 31509 (L3); wazuh-truenas: 100351 (L8), 100352 (L10), 100355 (L5), 100356 (L10), 100357 (L7), 100358 (L10), 100364 (L5), 100365 (L10)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "14"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-proxmox, wazuh-stock, wazuh-truenas"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1110.003",
+      "score": 10,
+      "color": "#66bd63",
+      "comment": "wazuh-truenas: 100352 (L10), 100356 (L10), 100358 (L10), 100365 (L10)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "4"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-truenas"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1112",
+      "score": 14,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 594 (L5), 597 (L5), 598 (L5), 750 (L5), 751 (L5), 752 (L5), 24708 (L4), 60667 (L5), 91813 (L3), 91814 (L4), 91843 (L3), 91844 (L12), 92041 (L10), 92045 (L14), 92304 (L6), 92305 (L12), 92306 (L12)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "17"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1113",
+      "score": 14,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 91803 (L14)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1114",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 3102 (L5), 3103 (L6), 3104 (L6), 3105 (L5), 3106 (L5), 3108 (L6), 3151 (L10), 3152 (L6), 3153 (L6), 3154 (L10), 3155 (L10), 3156 (L10), 3158 (L10), 3191 (L6), 3301 (L6), 3302 (L6), 3303 (L5), 3304 (L5), 3305 (L5), 3306 (L6), 3335 (L6), 3351 (L6), 3352 (L6), 3353 (L10), 3354 (L12), 3355 (L10), 3396 (L6), 3397 (L6), 3398 (L6), 3751 (L6), 3851 (L9), 3852 (L9), 9951 (L10), 9952 (L10), 9953 (L10), 91006 (L12)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "36"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1114.001",
+      "score": 10,
+      "color": "#66bd63",
+      "comment": "wazuh-stock: 91845 (L10)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1114.003",
+      "score": 6,
+      "color": "#d9ef8b",
+      "comment": "wazuh-stock: 91707 (L4), 91708 (L6)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "2"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1115",
+      "score": 4,
+      "color": "#d9ef8b",
+      "comment": "wazuh-stock: 91824 (L4)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1119",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 91820 (L4), 99836 (L12)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "2"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1120",
+      "score": 4,
+      "color": "#d9ef8b",
+      "comment": "wazuh-stock: 91840 (L4)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1133",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 4336 (L8), 4337 (L8), 4342 (L8), 4386 (L10), 6250 (L10), 6251 (L10), 6252 (L10), 6254 (L10), 6257 (L10), 14151 (L9), 14203 (L4), 14251 (L10), 64020 (L8), 64033 (L10), 80112 (L10), 80113 (L5), 80114 (L10), 80115 (L5), 80116 (L5), 81615 (L7), 81803 (L4), 81804 (L4), 91518 (L8); wazuh-unifi: 100325 (L6), 100329 (L12), 100333 (L10), 100360 (L8)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "27"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock, wazuh-unifi"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1135",
+      "score": 8,
+      "color": "#a6d96a",
+      "comment": "wazuh-stock: 92034 (L3), 92035 (L3); wazuh-truenas: 100375 (L8)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "3"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock, wazuh-truenas"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1136",
+      "score": 15,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 2960 (L2), 2961 (L5), 5902 (L8), 18127 (L5), 40501 (L15), 60121 (L5), 80718 (L3), 91704 (L6); wazuh-truenas: 100370 (L8); wazuh-unifi: 100337 (L10)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "10"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock, wazuh-truenas, wazuh-unifi"
+        }
+      ],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1136.001",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-proxmox: 100394 (L8), 100419 (L10); wazuh-stock: 92040 (L12)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "3"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-proxmox, wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1136.003",
+      "score": 3,
+      "color": "#d9ef8b",
+      "comment": "wazuh-stock: 65070 (L3)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1137",
+      "enabled": true,
+      "comment": "",
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1137.006",
+      "score": 3,
+      "color": "#d9ef8b",
+      "comment": "wazuh-stock: 91558 (L3)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1140",
+      "score": 13,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 91809 (L10), 92016 (L13), 92017 (L13), 92018 (L13), 92072 (L4), 92073 (L6)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "6"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1176",
+      "score": 4,
+      "color": "#d9ef8b",
+      "comment": "wazuh-stock: 24705 (L4), 24706 (L4), 24801 (L4), 24802 (L4), 24803 (L4), 24804 (L4), 24805 (L4), 24806 (L4), 24807 (L4), 24808 (L4), 24809 (L4), 24810 (L4), 24811 (L4)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "13"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1190",
+      "score": 15,
+      "color": "#1a9850",
+      "comment": "wazuh-nginx-proxy-manager: 101707 (L6); wazuh-stock: 5701 (L8), 5705 (L10), 30306 (L5), 31103 (L7), 31104 (L6), 31106 (L6), 31109 (L6), 31164 (L6), 31165 (L6), 31166 (L6), 31167 (L6), 31168 (L15), 31169 (L15), 31411 (L6), 31503 (L6), 31506 (L6), 64508 (L6), 65295 (L13); wazuh-threat-detection: 101410 (L14), 101451 (L12); wazuh-unifi: 100310 (L12)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "22"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-nginx-proxy-manager, wazuh-stock, wazuh-threat-detection, wazuh-unifi"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1200",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-threat-detection: 101501 (L12), 101502 (L10)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "2"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-threat-detection"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1202",
+      "score": 10,
+      "color": "#66bd63",
+      "comment": "wazuh-windows: 100451 (L10), 100452 (L10)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "2"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-windows"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1203",
+      "score": 15,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 31501 (L6), 31514 (L6), 40501 (L15), 60816 (L5), 61030 (L5), 61119 (L8), 61126 (L10), 61130 (L8), 61132 (L10), 61133 (L5), 62110 (L3), 80714 (L8), 87001 (L5), 87002 (L4), 87003 (L6), 87053 (L4), 87105 (L12), 87303 (L6)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "18"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1204",
+      "score": 10,
+      "color": "#66bd63",
+      "comment": "wazuh-stock: 80712 (L10)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1204.001",
+      "score": 15,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 99532 (L12), 99591 (L15), 99607 (L15)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "3"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1204.002",
+      "score": 15,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 92064 (L15), 92078 (L10), 92079 (L10), 99532 (L12), 99591 (L15), 99607 (L15), 99901 (L14)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "7"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1204.003",
+      "score": 15,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 99532 (L12), 99591 (L15), 99607 (L15)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "3"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1207",
+      "score": 10,
+      "color": "#66bd63",
+      "comment": "wazuh-stock: 18170 (L10), 60195 (L10), 60196 (L10), 60197 (L7)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "4"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1210",
+      "score": 15,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 5707 (L14), 5714 (L14), 11218 (L12), 31110 (L6), 31506 (L6), 31512 (L6), 31513 (L6), 40102 (L14), 40103 (L14), 40107 (L14), 91000 (L12), 91001 (L12), 91002 (L12), 91003 (L12), 91007 (L12), 92152 (L6), 92655 (L15)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "17"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1212",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 31502 (L6), 80740 (L12)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "2"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1213",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 99836 (L12)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1213.002",
+      "score": 10,
+      "color": "#66bd63",
+      "comment": "wazuh-stock: 91542 (L3), 91544 (L3), 91561 (L3), 91724 (L10)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "4"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1213.003",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 99837 (L12)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1218",
+      "score": 6,
+      "color": "#d9ef8b",
+      "comment": "wazuh-stock: 92076 (L6)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1218.005",
+      "score": 15,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 92047 (L12), 92048 (L15)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "2"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1218.011",
+      "score": 15,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 92079 (L10), 92081 (L15)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "2"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1218.012",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 92049 (L12), 92050 (L12)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "2"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1222",
+      "score": 3,
+      "color": "#d9ef8b",
+      "comment": "wazuh-stock: 65060 (L3), 65061 (L3)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "2"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1222.002",
+      "score": 5,
+      "color": "#d9ef8b",
+      "comment": "wazuh-stock: 89600 (L5), 89601 (L5)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "2"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1484",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 18114 (L5), 18203 (L5), 18204 (L5), 18205 (L5), 18206 (L5), 18207 (L5), 18208 (L5), 18209 (L5), 18210 (L5), 18211 (L5), 18212 (L5), 18213 (L5), 18214 (L5), 18215 (L5), 18216 (L5), 18217 (L12), 18218 (L5), 18219 (L12), 18220 (L5), 18221 (L5), 18222 (L12), 18223 (L5), 18225 (L12), 18226 (L5), 18227 (L12), 18228 (L10), 18229 (L12), 18230 (L12), 18231 (L10), 18232 (L10), 18233 (L5), 18234 (L12), 18235 (L10), 18236 (L10), 18237 (L10), 18238 (L8), 18239 (L12), 18240 (L10), 18241 (L8), 18242 (L10), 18243 (L10), 18244 (L10), 18245 (L8), 18246 (L8), 18247 (L8), 18248 (L8), 18249 (L8), 18250 (L12), 18251 (L12), 18252 (L12), 18253 (L10), 18254 (L10), 18255 (L10), 18256 (L10), 60113 (L5), 60138 (L5), 60139 (L5), 60140 (L5), 60141 (L5), 60142 (L5), 60143 (L5), 60144 (L5), 60145 (L5), 60146 (L5), 60147 (L5), 60148 (L5), 60149 (L5), 60150 (L5), 60151 (L5), 60152 (L5), 60153 (L5), 60154 (L12), 60155 (L5), 60156 (L12), 60157 (L5), 60158 (L5), 60159 (L12), 60160 (L5), 60162 (L12), 60163 (L5), 60164 (L12), 60165 (L10), 60166 (L12), 60167 (L12), 60168 (L10), 60169 (L10), 60170 (L5), 60171 (L12), 60172 (L10), 60173 (L10), 60174 (L10), 60176 (L12), 60177 (L10), 60179 (L10), 60180 (L10), 60181 (L10), 60187 (L12), 60188 (L12), 60189 (L12), 60190 (L10), 60191 (L10), 60192 (L10), 60193 (L10), 60229 (L4), 60230 (L4), 60231 (L4), 67028 (L3)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "107"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1484.001",
+      "score": 8,
+      "color": "#a6d96a",
+      "comment": "wazuh-stock: 60134 (L8), 60175 (L8), 60178 (L8), 60182 (L8), 60183 (L8), 60184 (L8), 60185 (L8), 60186 (L8)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "8"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1485",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-fim-escalation: 101440 (L10); wazuh-proxmox: 100391 (L10), 100429 (L8); wazuh-stock: 553 (L7), 597 (L5), 751 (L5), 4505 (L11), 65066 (L3), 80252 (L10), 87931 (L5), 87941 (L3), 87946 (L3), 87957 (L5), 99848 (L12); wazuh-truenas: 100354 (L12), 100374 (L10), 100395 (L8), 101443 (L12); wazuh-unifi: 100317 (L8)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "19"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-fim-escalation, wazuh-proxmox, wazuh-stock, wazuh-truenas, wazuh-unifi"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1486",
+      "score": 15,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 99535 (L12), 99594 (L15)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "2"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1489",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-proxmox: 100421 (L10); wazuh-stock: 6303 (L10), 6308 (L12), 6362 (L7), 6363 (L10), 7710 (L9), 7711 (L9), 7716 (L7), 18662 (L8), 18664 (L8), 18667 (L8), 60219 (L8), 60221 (L8), 60224 (L8), 60225 (L8), 60641 (L5), 60647 (L4), 60669 (L3), 60778 (L5), 60893 (L9), 61017 (L9), 61105 (L9), 61135 (L5), 63608 (L9), 63609 (L9), 63614 (L7)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "26"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-proxmox, wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1490",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-proxmox: 100428 (L8), 100430 (L12), 100431 (L8), 100433 (L8), 100434 (L8), 100437 (L8); wazuh-truenas: 100361 (L8), 100374 (L10), 100395 (L8); wazuh-unifi: 100316 (L8), 100317 (L8)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "11"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-proxmox, wazuh-truenas, wazuh-unifi"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1496",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-threat-detection: 101404 (L12)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-threat-detection"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1497",
+      "score": 10,
+      "color": "#66bd63",
+      "comment": "wazuh-stock: 19150 (L10), 19151 (L10), 19152 (L10), 19153 (L10), 91838 (L4), 91839 (L4)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "6"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1498",
+      "score": 13,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 31163 (L10), 31533 (L10), 65261 (L9), 65262 (L13), 65263 (L9), 65264 (L9), 65265 (L13), 65266 (L13), 65267 (L11), 65268 (L10), 65269 (L6), 65270 (L10), 65271 (L2), 65272 (L4), 65275 (L10)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "15"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1498.001",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 6360 (L12)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1499",
+      "score": 13,
+      "color": "#1a9850",
+      "comment": "wazuh-proxmox: 100426 (L12); wazuh-stock: 1003 (L13), 2301 (L10), 2964 (L10), 3151 (L10), 3152 (L6), 3153 (L6), 3154 (L10), 3155 (L10), 3156 (L10), 3158 (L10), 3330 (L10), 3351 (L6), 3352 (L6), 3353 (L10), 3355 (L10), 3356 (L10), 3851 (L9), 3852 (L9), 4550 (L10), 4551 (L10), 4851 (L10), 5103 (L9), 5108 (L12), 9352 (L10), 9505 (L7), 9611 (L12), 11219 (L12), 12101 (L12), 30116 (L10), 30316 (L10), 31115 (L13), 35053 (L10), 35057 (L10), 35058 (L10), 40104 (L13), 40106 (L12), 40109 (L12), 50126 (L12), 50180 (L10), 50182 (L12), 50183 (L10), 50580 (L10), 50581 (L10), 61119 (L8), 61126 (L10), 61132 (L10), 65276 (L10), 80137 (L10)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "49"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-proxmox, wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1505",
+      "enabled": true,
+      "comment": "",
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1505.003",
+      "score": 6,
+      "color": "#d9ef8b",
+      "comment": "wazuh-stock: 31505 (L6), 31514 (L6), 35021 (L6), 35022 (L6)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "4"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1518",
+      "enabled": true,
+      "comment": "",
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1518.001",
+      "score": 10,
+      "color": "#66bd63",
+      "comment": "wazuh-stock: 91835 (L6), 92077 (L10)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "2"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1526",
+      "score": 6,
+      "color": "#d9ef8b",
+      "comment": "wazuh-stock: 91715 (L6), 91716 (L6), 91717 (L6), 91718 (L6)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "4"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1529",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 5113 (L7), 7510 (L5), 18117 (L7), 18141 (L7), 18665 (L8), 19120 (L8), 50120 (L12), 50520 (L12), 50521 (L12), 60116 (L7), 60222 (L8), 60730 (L5), 61048 (L5), 67018 (L3), 90501 (L7); wazuh-truenas: 100378 (L7)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "16"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock, wazuh-truenas"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1530",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 65051 (L3), 65052 (L3), 99026 (L5), 99027 (L12), 99836 (L12), 99844 (L12)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "6"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1531",
+      "score": 9,
+      "color": "#a6d96a",
+      "comment": "wazuh-stock: 5903 (L3), 18112 (L8), 18116 (L9), 18127 (L5), 18138 (L7), 51531 (L3), 60111 (L8), 60115 (L9), 60121 (L5), 60122 (L5), 60123 (L5), 60124 (L5), 60125 (L5), 60126 (L7), 60127 (L5), 60128 (L5), 60129 (L5), 60130 (L7), 60135 (L8), 60202 (L5), 65063 (L3), 65064 (L3), 65065 (L3), 65072 (L3), 80719 (L3)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "25"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1537",
+      "score": 8,
+      "color": "#a6d96a",
+      "comment": "wazuh-stock: 65062 (L3); wazuh-truenas: 100377 (L8)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "2"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock, wazuh-truenas"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1542",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-threat-detection: 101430 (L12); wazuh-truenas: 100378 (L7)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "2"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-threat-detection, wazuh-truenas"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1543",
+      "enabled": true,
+      "comment": "",
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1543.003",
+      "score": 7,
+      "color": "#a6d96a",
+      "comment": "wazuh-stock: 6301 (L2), 6302 (L3), 6361 (L3), 6374 (L3), 60682 (L4), 60683 (L7), 60689 (L5), 61138 (L5), 63105 (L5), 83202 (L5), 91818 (L4), 92307 (L3)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "12"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1546",
+      "score": 6,
+      "color": "#d9ef8b",
+      "comment": "wazuh-stock: 92076 (L6)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1546.003",
+      "score": 14,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 89501 (L12), 89502 (L14)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "2"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1546.011",
+      "score": 14,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 92058 (L12), 92059 (L14), 92157 (L6)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "3"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1546.015",
+      "score": 15,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 92308 (L3), 92309 (L15)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "2"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1547",
+      "enabled": true,
+      "comment": "",
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1547.001",
+      "score": 14,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 24701 (L4), 24708 (L4), 91844 (L12), 92225 (L6), 92226 (L14), 92301 (L12), 92302 (L6), 92303 (L12)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "8"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1547.006",
+      "score": 11,
+      "color": "#66bd63",
+      "comment": "wazuh-stock: 5132 (L11), 5133 (L11)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "2"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1547.012",
+      "score": 15,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 92655 (L15)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1548",
+      "score": 14,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 92061 (L3), 92062 (L14); wazuh-truenas: 100348 (L4), 100380 (L10)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "4"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock, wazuh-truenas"
+        }
+      ],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1548.001",
+      "score": 4,
+      "color": "#d9ef8b",
+      "comment": "wazuh-stock: 24059 (L4)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1548.002",
+      "score": 14,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 92046 (L12), 92055 (L12), 92056 (L14), 92062 (L14), 92304 (L6), 92305 (L12), 92306 (L12)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "7"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1548.003",
+      "score": 10,
+      "color": "#66bd63",
+      "comment": "wazuh-fim-escalation: 100035 (L10); wazuh-stock: 2504 (L9), 5302 (L9), 5401 (L5), 5402 (L3), 5403 (L4), 5404 (L10), 5405 (L5), 5407 (L3), 80721 (L10); wazuh-threat-detection: 100362 (L10); wazuh-truenas: 100366 (L7), 100367 (L5), 100368 (L10)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "14"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-fim-escalation, wazuh-stock, wazuh-threat-detection, wazuh-truenas"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1550",
+      "score": 10,
+      "color": "#66bd63",
+      "comment": "wazuh-stock: 18171 (L10)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1550.002",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 60196 (L10), 92602 (L12), 92652 (L6), 92657 (L6)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "4"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1552",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-fim-escalation: 101440 (L10); wazuh-proxmox: 100420 (L10), 100424 (L1), 100425 (L12); wazuh-stock: 92223 (L3), 99838 (L12)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "6"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-fim-escalation, wazuh-proxmox, wazuh-stock"
+        }
+      ],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1552.001",
+      "score": 10,
+      "color": "#66bd63",
+      "comment": "wazuh-truenas: 100371 (L10)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-truenas"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1552.004",
+      "score": 6,
+      "color": "#d9ef8b",
+      "comment": "wazuh-stock: 92224 (L6)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1553",
+      "enabled": true,
+      "comment": "",
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1553.004",
+      "score": 8,
+      "color": "#a6d96a",
+      "comment": "wazuh-truenas: 100372 (L8)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-truenas"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1555",
+      "score": 10,
+      "color": "#66bd63",
+      "comment": "wazuh-stock: 92153 (L10)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1555.003",
+      "score": 8,
+      "color": "#a6d96a",
+      "comment": "wazuh-stock: 31550 (L6), 61130 (L8)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "2"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1556",
+      "enabled": true,
+      "comment": "",
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1556.003",
+      "score": 8,
+      "color": "#a6d96a",
+      "comment": "wazuh-fim-escalation: 100037 (L8)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-fim-escalation"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1556.006",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 99846 (L12), 99847 (L12)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "2"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1557",
+      "enabled": true,
+      "comment": "",
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1557.002",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 6321 (L12)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1559",
+      "enabled": true,
+      "comment": "",
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1559.001",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 92050 (L12)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1560",
+      "score": 4,
+      "color": "#d9ef8b",
+      "comment": "wazuh-stock: 91826 (L4), 91827 (L4)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "2"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1560.001",
+      "score": 10,
+      "color": "#66bd63",
+      "comment": "wazuh-stock: 91825 (L4), 91846 (L10), 92067 (L6)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "3"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1561",
+      "enabled": true,
+      "comment": "",
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1561.001",
+      "score": 7,
+      "color": "#a6d96a",
+      "comment": "wazuh-stock: 31413 (L5), 87902 (L5), 87914 (L7), 87921 (L7)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "4"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1565",
+      "enabled": true,
+      "comment": "",
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1565.001",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 550 (L7), 592 (L8), 594 (L5), 750 (L5), 35054 (L12), 80714 (L8)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "6"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1566",
+      "score": 6,
+      "color": "#d9ef8b",
+      "comment": "wazuh-stock: 99613 (L6)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1567",
+      "score": 3,
+      "color": "#d9ef8b",
+      "comment": "wazuh-stock: 92037 (L3)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1567.002",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 92038 (L12)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1569",
+      "enabled": true,
+      "comment": "",
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1569.002",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 6373 (L12), 6376 (L12), 24702 (L4), 92068 (L3), 92650 (L12)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "5"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1570",
+      "score": 6,
+      "color": "#d9ef8b",
+      "comment": "wazuh-stock: 92202 (L6), 92217 (L6), 92218 (L6), 92220 (L6)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "4"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1571",
+      "score": 7,
+      "color": "#a6d96a",
+      "comment": "wazuh-unifi: 100327 (L7)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-unifi"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1572",
+      "score": 10,
+      "color": "#66bd63",
+      "comment": "wazuh-windows: 100450 (L10)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-windows"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1574",
+      "score": 6,
+      "color": "#d9ef8b",
+      "comment": "wazuh-stock: 92220 (L6)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1574.001",
+      "score": 13,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 92019 (L13), 92036 (L3), 92219 (L6) [rules tag T1574.002, revoked in this ATT&CK version]",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "3"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1574.010",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 92206 (L12)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1578",
+      "score": 7,
+      "color": "#a6d96a",
+      "comment": "wazuh-proxmox: 100393 (L7)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-proxmox"
+        }
+      ],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1578.001",
+      "score": 10,
+      "color": "#66bd63",
+      "comment": "wazuh-proxmox: 100391 (L10)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-proxmox"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1578.002",
+      "score": 6,
+      "color": "#d9ef8b",
+      "comment": "wazuh-proxmox: 100390 (L6)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-proxmox"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1584",
+      "enabled": true,
+      "comment": "",
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1584.002",
+      "score": 3,
+      "color": "#d9ef8b",
+      "comment": "wazuh-stock: 99080 (L3), 99081 (L3), 99082 (L3)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "3"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1586",
+      "score": 15,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 99612 (L15)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1587",
+      "enabled": true,
+      "comment": "",
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1587.001",
+      "score": 15,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 99532 (L12), 99591 (L15), 99607 (L15)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "3"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1587.004",
+      "score": 15,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 99528 (L6), 99549 (L12), 99568 (L13), 99587 (L15)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "4"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1588",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 91007 (L12)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1588.001",
+      "score": 15,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 35056 (L12), 99532 (L12), 99591 (L15), 99607 (L15)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "4"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1589",
+      "enabled": true,
+      "comment": "",
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1589.001",
+      "score": 15,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 99612 (L15)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1595",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 6323 (L12)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1595.002",
+      "score": 10,
+      "color": "#66bd63",
+      "comment": "wazuh-stock: 31151 (L10), 31161 (L10)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "2"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1595.003",
+      "score": 8,
+      "color": "#a6d96a",
+      "comment": "wazuh-nginx-proxy-manager: 101706 (L6), 101708 (L8), 101709 (L6)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "3"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-nginx-proxy-manager"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1601",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-threat-detection: 101430 (L12)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-threat-detection"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1610",
+      "score": 7,
+      "color": "#a6d96a",
+      "comment": "wazuh-truenas: 100376 (L7)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-truenas"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1685",
+      "score": 13,
+      "color": "#1a9850",
+      "comment": "wazuh-fim-escalation: 101441 (L10); wazuh-stock: 504 (L3), 505 (L3), 506 (L3), 52510 (L6), 65053 (L3), 65058 (L3), 65059 (L3), 81609 (L8), 90509 (L7), 91522 (L8), 91525 (L8), 92007 (L3), 92008 (L12), 92009 (L13), 92010 (L13), 92011 (L13), 92012 (L13), 92013 (L13), 92014 (L13), 92015 (L13); wazuh-threat-detection: 101403 (L13), 101420 (L10); wazuh-truenas: 100372 (L8), 100373 (L8) [rules tag T1562, T1562.001, T1562.006, revoked in this ATT&CK version]",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "25"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-fim-escalation, wazuh-stock, wazuh-threat-detection, wazuh-truenas"
+        }
+      ],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1685.002",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 65056 (L3), 65057 (L3), 99030 (L12) [rules tag T1562.008, revoked in this ATT&CK version]",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "3"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1685.004",
+      "score": 13,
+      "color": "#1a9850",
+      "comment": "wazuh-threat-detection: 101403 (L13) [rules tag T1562.012, revoked in this ATT&CK version]",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-threat-detection"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1685.005",
+      "score": 9,
+      "color": "#a6d96a",
+      "comment": "wazuh-stock: 6302 (L3), 18118 (L9) [rules tag T1070.001, revoked in this ATT&CK version]",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "2"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1686",
+      "score": 14,
+      "color": "#1a9850",
+      "comment": "wazuh-stock: 4339 (L8), 4340 (L8), 4342 (L8), 4509 (L8), 64024 (L8), 64027 (L8), 81611 (L7), 92043 (L10), 92044 (L14); wazuh-unifi: 100336 (L8) [rules tag T1562.004, revoked in this ATT&CK version]",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "10"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-stock, wazuh-unifi"
+        }
+      ],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1686.001",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-proxmox: 100422 (L8); wazuh-stock: 65054 (L3), 65055 (L3), 99028 (L12) [rules tag T1562.007, revoked in this ATT&CK version]",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "4"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-proxmox, wazuh-stock"
+        }
+      ],
+      "showSubtechniques": false
+    }
+  ],
+  "gradient": {
+    "colors": [
+      "#ffffff",
+      "#1a9850"
+    ],
+    "minValue": 0,
+    "maxValue": 15
+  },
+  "legendItems": [
+    {
+      "label": "L12+ critical detection",
+      "color": "#1a9850"
+    },
+    {
+      "label": "L10-11 at the triage gate",
+      "color": "#66bd63"
+    },
+    {
+      "label": "L7-9 indexed, below the gate",
+      "color": "#a6d96a"
+    },
+    {
+      "label": "L1-6 informational",
+      "color": "#d9ef8b"
+    }
+  ],
+  "metadata": [
+    {
+      "name": "sources",
+      "value": "wazuh-fim-escalation, wazuh-misp-ioc, wazuh-nginx-proxy-manager, wazuh-proxmox, wazuh-stock, wazuh-threat-detection, wazuh-truenas, wazuh-unifi, wazuh-windows"
+    },
+    {
+      "name": "techniques",
+      "value": "186"
+    }
+  ],
+  "links": [
+    {
+      "label": "wazuh-fim-escalation",
+      "url": "https://github.com/secopsxsaiyan/wazuh-fim-escalation"
+    },
+    {
+      "label": "wazuh-misp-ioc",
+      "url": "https://github.com/secopsxsaiyan/wazuh-misp-ioc"
+    },
+    {
+      "label": "wazuh-nginx-proxy-manager",
+      "url": "https://github.com/secopsxsaiyan/wazuh-nginx-proxy-manager"
+    },
+    {
+      "label": "wazuh-proxmox",
+      "url": "https://github.com/secopsxsaiyan/wazuh-proxmox"
+    },
+    {
+      "label": "wazuh-threat-detection",
+      "url": "https://github.com/secopsxsaiyan/wazuh-threat-detection"
+    },
+    {
+      "label": "wazuh-truenas",
+      "url": "https://github.com/secopsxsaiyan/wazuh-truenas"
+    },
+    {
+      "label": "wazuh-unifi",
+      "url": "https://github.com/secopsxsaiyan/wazuh-unifi"
+    },
+    {
+      "label": "wazuh-windows",
+      "url": "https://github.com/secopsxsaiyan/wazuh-windows"
+    }
+  ],
+  "showTacticRowBackground": false,
+  "tacticRowBackground": "#dddddd",
+  "selectTechniquesAcrossTactics": true,
+  "selectSubtechniquesWithParent": false,
+  "selectVisibleTechniques": false
+}

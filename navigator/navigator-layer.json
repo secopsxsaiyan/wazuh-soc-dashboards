@@ -1,0 +1,1047 @@
+{
+  "name": "Wazuh detection packs - ATT&CK coverage",
+  "versions": {
+    "attack": "20",
+    "navigator": "5.3.2",
+    "layer": "4.5"
+  },
+  "domain": "enterprise-attack",
+  "description": "Techniques tagged in the <mitre> blocks of alerting rules (level >= 1) in: wazuh-fim-escalation, wazuh-misp-ioc, wazuh-nginx-proxy-manager, wazuh-proxmox, wazuh-threat-detection, wazuh-truenas, wazuh-unifi, wazuh-windows. Score = highest rule level for the technique.",
+  "sorting": 3,
+  "layout": {
+    "layout": "side",
+    "aggregateFunction": "max",
+    "showID": true,
+    "showName": true,
+    "showAggregateScores": true,
+    "countUnscored": false,
+    "expandedSubtechniques": "annotated"
+  },
+  "hideDisabled": false,
+  "techniques": [
+    {
+      "techniqueID": "T1005",
+      "score": 6,
+      "color": "#d9ef8b",
+      "comment": "wazuh-proxmox: 100392 (L6)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-proxmox"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1020",
+      "score": 8,
+      "color": "#a6d96a",
+      "comment": "wazuh-truenas: 100377 (L8)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-truenas"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1021",
+      "enabled": true,
+      "comment": "",
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1021.004",
+      "score": 5,
+      "color": "#d9ef8b",
+      "comment": "wazuh-truenas: 100363 (L5)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-truenas"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1039",
+      "score": 8,
+      "color": "#a6d96a",
+      "comment": "wazuh-truenas: 100375 (L8)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-truenas"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1046",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-threat-detection: 101453 (L10); wazuh-unifi: 100311 (L12), 100314 (L10), 100323 (L10), 100329 (L12)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "5"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-threat-detection, wazuh-unifi"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1053",
+      "enabled": true,
+      "comment": "",
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1053.003",
+      "score": 8,
+      "color": "#a6d96a",
+      "comment": "wazuh-fim-escalation: 100036 (L8)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-fim-escalation"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1059",
+      "enabled": true,
+      "comment": "",
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1059.004",
+      "score": 13,
+      "color": "#1a9850",
+      "comment": "wazuh-threat-detection: 101400 (L13); wazuh-truenas: 100368 (L10), 100380 (L10); wazuh-windows: 100452 (L10)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "4"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-threat-detection, wazuh-truenas, wazuh-windows"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1070",
+      "enabled": true,
+      "comment": "",
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1070.006",
+      "score": 10,
+      "color": "#66bd63",
+      "comment": "wazuh-threat-detection: 101435 (L10)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-threat-detection"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1071",
+      "score": 11,
+      "color": "#66bd63",
+      "comment": "wazuh-misp-ioc: 100218 (L11)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-misp-ioc"
+        }
+      ],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1071.001",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-misp-ioc: 100227 (L12), 100228 (L12)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "2"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-misp-ioc"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1078",
+      "score": 10,
+      "color": "#66bd63",
+      "comment": "wazuh-fim-escalation: 100038 (L8); wazuh-proxmox: 100416 (L4); wazuh-truenas: 100350 (L4), 100359 (L7), 100363 (L5), 100382 (L6); wazuh-unifi: 100332 (L5), 100333 (L10)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "8"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-fim-escalation, wazuh-proxmox, wazuh-truenas, wazuh-unifi"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1098",
+      "score": 10,
+      "color": "#66bd63",
+      "comment": "wazuh-proxmox: 100394 (L8), 100419 (L10), 100423 (L7); wazuh-truenas: 100370 (L8), 100371 (L10); wazuh-unifi: 100307 (L8), 100334 (L5), 100337 (L10)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "8"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-proxmox, wazuh-truenas, wazuh-unifi"
+        }
+      ],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1098.001",
+      "score": 10,
+      "color": "#66bd63",
+      "comment": "wazuh-truenas: 100371 (L10), 100382 (L6)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "2"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-truenas"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1098.004",
+      "score": 10,
+      "color": "#66bd63",
+      "comment": "wazuh-fim-escalation: 100039 (L10)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-fim-escalation"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1110",
+      "score": 10,
+      "color": "#66bd63",
+      "comment": "wazuh-nginx-proxy-manager: 101710 (L8); wazuh-proxmox: 100417 (L8); wazuh-unifi: 100338 (L6), 100339 (L10)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "4"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-nginx-proxy-manager, wazuh-proxmox, wazuh-unifi"
+        }
+      ],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1110.001",
+      "score": 10,
+      "color": "#66bd63",
+      "comment": "wazuh-proxmox: 100418 (L10); wazuh-truenas: 100351 (L8), 100352 (L10), 100355 (L5), 100356 (L10), 100357 (L7), 100358 (L10), 100364 (L5), 100365 (L10)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "9"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-proxmox, wazuh-truenas"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1110.003",
+      "score": 10,
+      "color": "#66bd63",
+      "comment": "wazuh-truenas: 100352 (L10), 100356 (L10), 100358 (L10), 100365 (L10)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "4"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-truenas"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1133",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-unifi: 100325 (L6), 100329 (L12), 100333 (L10), 100360 (L8)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "4"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-unifi"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1135",
+      "score": 8,
+      "color": "#a6d96a",
+      "comment": "wazuh-truenas: 100375 (L8)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-truenas"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1136",
+      "score": 10,
+      "color": "#66bd63",
+      "comment": "wazuh-truenas: 100370 (L8); wazuh-unifi: 100337 (L10)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "2"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-truenas, wazuh-unifi"
+        }
+      ],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1136.001",
+      "score": 10,
+      "color": "#66bd63",
+      "comment": "wazuh-proxmox: 100394 (L8), 100419 (L10)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "2"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-proxmox"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1190",
+      "score": 14,
+      "color": "#1a9850",
+      "comment": "wazuh-nginx-proxy-manager: 101707 (L6); wazuh-threat-detection: 101410 (L14), 101451 (L12); wazuh-unifi: 100310 (L12)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "4"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-nginx-proxy-manager, wazuh-threat-detection, wazuh-unifi"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1200",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-threat-detection: 101501 (L12), 101502 (L10)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "2"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-threat-detection"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1202",
+      "score": 10,
+      "color": "#66bd63",
+      "comment": "wazuh-windows: 100451 (L10), 100452 (L10)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "2"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-windows"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1485",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-fim-escalation: 101440 (L10); wazuh-proxmox: 100391 (L10), 100429 (L8); wazuh-truenas: 100354 (L12), 100374 (L10), 100395 (L8), 101443 (L12); wazuh-unifi: 100317 (L8)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "8"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-fim-escalation, wazuh-proxmox, wazuh-truenas, wazuh-unifi"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1489",
+      "score": 10,
+      "color": "#66bd63",
+      "comment": "wazuh-proxmox: 100421 (L10)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-proxmox"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1490",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-proxmox: 100428 (L8), 100430 (L12), 100431 (L8), 100433 (L8), 100434 (L8), 100437 (L8); wazuh-truenas: 100361 (L8), 100374 (L10), 100395 (L8); wazuh-unifi: 100316 (L8), 100317 (L8)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "11"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-proxmox, wazuh-truenas, wazuh-unifi"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1496",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-threat-detection: 101404 (L12)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-threat-detection"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1499",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-proxmox: 100426 (L12)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-proxmox"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1529",
+      "score": 7,
+      "color": "#a6d96a",
+      "comment": "wazuh-truenas: 100378 (L7)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-truenas"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1537",
+      "score": 8,
+      "color": "#a6d96a",
+      "comment": "wazuh-truenas: 100377 (L8)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-truenas"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1542",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-threat-detection: 101430 (L12); wazuh-truenas: 100378 (L7)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "2"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-threat-detection, wazuh-truenas"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1548",
+      "score": 10,
+      "color": "#66bd63",
+      "comment": "wazuh-truenas: 100348 (L4), 100380 (L10)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "2"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-truenas"
+        }
+      ],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1548.003",
+      "score": 10,
+      "color": "#66bd63",
+      "comment": "wazuh-fim-escalation: 100035 (L10); wazuh-threat-detection: 100362 (L10); wazuh-truenas: 100366 (L7), 100367 (L5), 100368 (L10)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "5"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-fim-escalation, wazuh-threat-detection, wazuh-truenas"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1552",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-fim-escalation: 101440 (L10); wazuh-proxmox: 100420 (L10), 100424 (L1), 100425 (L12)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "4"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-fim-escalation, wazuh-proxmox"
+        }
+      ],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1552.001",
+      "score": 10,
+      "color": "#66bd63",
+      "comment": "wazuh-truenas: 100371 (L10)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-truenas"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1553",
+      "enabled": true,
+      "comment": "",
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1553.004",
+      "score": 8,
+      "color": "#a6d96a",
+      "comment": "wazuh-truenas: 100372 (L8)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-truenas"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1556",
+      "enabled": true,
+      "comment": "",
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1556.003",
+      "score": 8,
+      "color": "#a6d96a",
+      "comment": "wazuh-fim-escalation: 100037 (L8)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-fim-escalation"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1571",
+      "score": 7,
+      "color": "#a6d96a",
+      "comment": "wazuh-unifi: 100327 (L7)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-unifi"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1572",
+      "score": 10,
+      "color": "#66bd63",
+      "comment": "wazuh-windows: 100450 (L10)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-windows"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1578",
+      "score": 7,
+      "color": "#a6d96a",
+      "comment": "wazuh-proxmox: 100393 (L7)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-proxmox"
+        }
+      ],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1578.001",
+      "score": 10,
+      "color": "#66bd63",
+      "comment": "wazuh-proxmox: 100391 (L10)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-proxmox"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1578.002",
+      "score": 6,
+      "color": "#d9ef8b",
+      "comment": "wazuh-proxmox: 100390 (L6)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-proxmox"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1595",
+      "enabled": true,
+      "comment": "",
+      "metadata": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1595.003",
+      "score": 8,
+      "color": "#a6d96a",
+      "comment": "wazuh-nginx-proxy-manager: 101706 (L6), 101708 (L8), 101709 (L6)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "3"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-nginx-proxy-manager"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1601",
+      "score": 12,
+      "color": "#1a9850",
+      "comment": "wazuh-threat-detection: 101430 (L12)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-threat-detection"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1610",
+      "score": 7,
+      "color": "#a6d96a",
+      "comment": "wazuh-truenas: 100376 (L7)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-truenas"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1685",
+      "score": 13,
+      "color": "#1a9850",
+      "comment": "wazuh-fim-escalation: 101441 (L10); wazuh-threat-detection: 101403 (L13), 101420 (L10); wazuh-truenas: 100372 (L8), 100373 (L8) [rules tag T1562.001, T1562.006, revoked in this ATT&CK version]",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "5"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-fim-escalation, wazuh-threat-detection, wazuh-truenas"
+        }
+      ],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1685.004",
+      "score": 13,
+      "color": "#1a9850",
+      "comment": "wazuh-threat-detection: 101403 (L13) [rules tag T1562.012, revoked in this ATT&CK version]",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-threat-detection"
+        }
+      ],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1686",
+      "score": 8,
+      "color": "#a6d96a",
+      "comment": "wazuh-unifi: 100336 (L8) [rules tag T1562.004, revoked in this ATT&CK version]",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-unifi"
+        }
+      ],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1686.001",
+      "score": 8,
+      "color": "#a6d96a",
+      "comment": "wazuh-proxmox: 100422 (L8) [rules tag T1562.007, revoked in this ATT&CK version]",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "rules",
+          "value": "1"
+        },
+        {
+          "name": "sources",
+          "value": "wazuh-proxmox"
+        }
+      ],
+      "showSubtechniques": false
+    }
+  ],
+  "gradient": {
+    "colors": [
+      "#ffffff",
+      "#1a9850"
+    ],
+    "minValue": 0,
+    "maxValue": 15
+  },
+  "legendItems": [
+    {
+      "label": "L12+ critical detection",
+      "color": "#1a9850"
+    },
+    {
+      "label": "L10-11 at the triage gate",
+      "color": "#66bd63"
+    },
+    {
+      "label": "L7-9 indexed, below the gate",
+      "color": "#a6d96a"
+    },
+    {
+      "label": "L1-6 informational",
+      "color": "#d9ef8b"
+    }
+  ],
+  "metadata": [
+    {
+      "name": "sources",
+      "value": "wazuh-fim-escalation, wazuh-misp-ioc, wazuh-nginx-proxy-manager, wazuh-proxmox, wazuh-threat-detection, wazuh-truenas, wazuh-unifi, wazuh-windows"
+    },
+    {
+      "name": "techniques",
+      "value": "50"
+    }
+  ],
+  "links": [
+    {
+      "label": "wazuh-fim-escalation",
+      "url": "https://github.com/secopsxsaiyan/wazuh-fim-escalation"
+    },
+    {
+      "label": "wazuh-misp-ioc",
+      "url": "https://github.com/secopsxsaiyan/wazuh-misp-ioc"
+    },
+    {
+      "label": "wazuh-nginx-proxy-manager",
+      "url": "https://github.com/secopsxsaiyan/wazuh-nginx-proxy-manager"
+    },
+    {
+      "label": "wazuh-proxmox",
+      "url": "https://github.com/secopsxsaiyan/wazuh-proxmox"
+    },
+    {
+      "label": "wazuh-threat-detection",
+      "url": "https://github.com/secopsxsaiyan/wazuh-threat-detection"
+    },
+    {
+      "label": "wazuh-truenas",
+      "url": "https://github.com/secopsxsaiyan/wazuh-truenas"
+    },
+    {
+      "label": "wazuh-unifi",
+      "url": "https://github.com/secopsxsaiyan/wazuh-unifi"
+    },
+    {
+      "label": "wazuh-windows",
+      "url": "https://github.com/secopsxsaiyan/wazuh-windows"
+    }
+  ],
+  "showTacticRowBackground": false,
+  "tacticRowBackground": "#dddddd",
+  "selectTechniquesAcrossTactics": true,
+  "selectSubtechniquesWithParent": false,
+  "selectVisibleTechniques": false
+}
